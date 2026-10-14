@@ -6,7 +6,6 @@ class Solution(object):
         :rtype: str
         """
         cur = ""
-        temp = sum 
         res = []
         if sum > 9*num:
             return ""
