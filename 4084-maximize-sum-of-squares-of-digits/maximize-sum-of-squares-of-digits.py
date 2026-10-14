@@ -15,7 +15,7 @@ class Solution(object):
                 sum = sum - 9
             else:
                 res.append(str(sum))
-                sum = sum - sum 
+                sum = 0
         return "".join(res)
             
             
