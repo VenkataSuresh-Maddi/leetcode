@@ -7,15 +7,16 @@ class Solution(object):
         """
         cur = ""
         temp = sum 
-        res = 0
-        while num>0:
-            cur = cur + str(min(9,sum))
-            if sum >= 9:
-                sum = sum - 9 
+        res = []
+        if sum > 9*num:
+            return ""
+        for i in range(num):
+            if sum > 9:
+                res.append('9')
+                sum = sum - 9
             else:
+                res.append(str(sum))
                 sum = sum - sum 
-            num -= 1
-        for x in cur:
-            res += int(x)
-        return cur if res == temp else ""
-        
+        return "".join(res)
+            
+            
